@@ -8,8 +8,10 @@ public class FallingStars : MonoBehaviour
 
     void Update()
     {
+        
         if (transform.position.y <= -5f)
             Destroy(gameObject);
         transform.position -= new Vector3(0, fallStarSpeed * Time.deltaTime, 0);
     }
+    
 }
